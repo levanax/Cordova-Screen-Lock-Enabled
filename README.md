@@ -1,3 +1,7 @@
+#
+原项目地址：https://github.com/ABarak64/Cordova-Screen-Lock-Enabled
+
+~
 ## Cordova-Screen-Lock-Enabled
 --
 
@@ -12,7 +16,7 @@ This is a Cordova plugin to determine if a device has a screen lock set for gett
 
 Install with Cordova cli
 
-    $ cordova plugin add https://github.com/abarak64/cordova-screen-lock-enabled.git
+    $ cordova plugin add https://github.com/levanax/Cordova-Screen-Lock-Enabled.git
 	
 #### Usage
 

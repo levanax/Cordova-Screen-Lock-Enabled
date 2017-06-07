@@ -26,15 +26,27 @@ public class ScreenLock extends CordovaPlugin {
 
     private static boolean isPatternSet(Context context)
     {
-        ContentResolver cr = context.getContentResolver();
-        try
+        boolean result = false;
+        if(android.os.Build.VERSION.SDK_INT < 23)
         {
-            int lockPatternEnable = Settings.Secure.getInt(cr, Settings.Secure.LOCK_PATTERN_ENABLED);
-            return lockPatternEnable == 1;
+            ContentResolver cr = context.getContentResolver();
+            try
+            {
+                int lockPatternEnable = Settings.Secure.getInt(cr, Settings.Secure.LOCK_PATTERN_ENABLED);
+                result = lockPatternEnable == 1;
+            }
+            catch (Settings.SettingNotFoundException e)
+            {
+                result = false;
+            }
+            finally
+            {
+                return result;
+            }
         }
-        catch (Settings.SettingNotFoundException e)
+        else
         {
-            return false;
+            return result;
         }
     }
 

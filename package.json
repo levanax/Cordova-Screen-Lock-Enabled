@@ -14,7 +14,7 @@
     "android"
   ],
   "cordova": {
-    "id": "com.abarak64.screen-lock",
+    "id": "com.levanax.screen-lock",
     "platforms": [
       "android",
       "ios",
@@ -23,7 +23,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ABarak64/Cordova-Screen-Lock-Enabled.git"
+    "url": "git+https://github.com/levanax/Cordova-Screen-Lock-Enabled.git"
   },
   "keywords": [
     "ecosystem:cordova",
@@ -36,7 +36,7 @@
       "version": ">=3.4.0"
     }
   ],
-  "author": "Adam Barak",
+  "author": "levanax",
   "license": "Apache 2.0",
   "bugs": {
     "url": "https://github.com/ABarak64/Cordova-Screen-Lock-Enabled/issues"
